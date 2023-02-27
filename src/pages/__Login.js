@@ -12,7 +12,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const { data } = await axios.post('http://localhost:5002' + '/users/login', { email: email, password: password })
+            const { data } = await axios.post('https://api.careerup.mn' + '/users/login', { email: email, password: password })
             localStorage.setItem('jwt', data.jwt)
             NotificationManager.success('Successfully logged in', '', 3000)
             navigate('/')

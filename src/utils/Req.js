@@ -1,7 +1,7 @@
 import axios from "axios";
 import { NotificationManager } from "react-notifications";
 // const server = 'http://103.143.40.57'
-const server = 'http://localhost:5002'
+const server = 'https://api.careerup.mn'
 
 const Req = (method, { url, body, headers = {}, toast }) => {
     return new Promise(async (resolve, reject) => {
